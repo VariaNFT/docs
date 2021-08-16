@@ -7,7 +7,7 @@ sidebar_position: 2
 Adobe Illustrator is the recommended design software.
 
 # Limitation
-If you want to have effect on dynamic content, be sure not to flatten the image otherwise VariaNFT cannot modify the content.
+If you want to have effect on dynamic content, be sure not to flatten the image otherwise VariaNFT cannot modify the content. You can use SVG filters to preserve effects.
 ![Effect > SVG Filters](/img/template-guide/ai-svg-filters.png)
 
 # Preparation
