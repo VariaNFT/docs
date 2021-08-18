@@ -16,7 +16,7 @@ module.exports = {
   themeConfig: {
     navbar: {
       logo: {
-        src: 'img/logo.svg'
+        src: 'img/logo.png'
       },
       items: [
         {
