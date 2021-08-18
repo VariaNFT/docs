@@ -50,7 +50,7 @@ module.exports = {
           items: [
             {
               label: 'Facebook',
-              href: 'https://www.facebook.com/Varianft-106185488388491',
+              href: 'https://www.facebook.com/varianft',
             },
             {
               label: 'Discord',
