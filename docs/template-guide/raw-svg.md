@@ -4,10 +4,10 @@ sidebar_position: 1
 
 # Raw SVG
 
-If you create SVG files with software not listing in our guide and cannot use them in VariaNFT, you can ask us to add a guide or follow this guide to modify your SVG files.
+If you create SVG files with software not listed in our guide and cannot use them in VariaNFT, you can ask us to add a guide or follow this guide to modify your SVG files.
 
 # Text Element
-VariaNFT will discover text elements in the SVG file and replace `{<column>}` with data in the CSV file. For example:
+VariaNFT will detect text elements in the SVG file and replace `{<column>}` with data in the CSV file. For example:
 
 Preview:
 <svg version="1.1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 100" width="300" height="100">
@@ -24,7 +24,7 @@ Code:
 </svg>
 ```
 
-When the above file is used as the template file, and then used the following CSV file:
+When the file above is used as the template file with the following CSV file in use:
 
 ```csv=
 name
@@ -37,13 +37,13 @@ It will be rendered as:
     <text x="50" y="50" font-size="50">Bill Wu</text>
 </svg>
 
-In cases that VariaNFT didn't render well, check those things:
-1. Text Element is preserved: some software will turn texts into paths to ensure the texts can be rendered in all environments, but VariaNFT won't be able to discover them
+In cases where VariaNFT couldn't render properly, check the following things:
+1. Text Element is preserved: some software will turn texts into paths to ensure that texts can be rendered in all environments, but VariaNFT won't be able to discover them
 2. Text inside the `<text>` is presented in the format `{<column>}`: the parentheses have to be `{` and `}`, check if they are `&#123;` and `&#125;` or other signs
-3. `<column>` does match column name: check if there are spaces before or after the column name, `name,^address` will be considered as `name` and `^address` (^ are space chars)
+3. `<column>` does match tha column's name: check if there are spaces before or after the column name, `name,^address` will be considered as `name` and `^address` (^ are space chars)
 
 ## Image Element
-VariaNFT will discover image elements in the SVG file and replace the `href` attribute according to the id of the image element. For example:
+VariaNFT will detect image elements in the SVG file and replace the `href` attribute according to the id of the image element. For example:
 
 
 Preview:
@@ -61,7 +61,7 @@ Code:
 </svg>
 ```
 
-When the above file is used as the template file, and then used the following CSV file:
+When the file above is used as the template file with the following CSV file in use:
 
 ```csv=
 image
@@ -73,7 +73,7 @@ It will be rendered as:
     <image id="image" x="0" y="0" width="588" height="181" href="https://via.placeholder.com/588x188"></image>
 </svg>
 
-In cases that VariaNFT didn't render well, check those things:
-1. `id` of Image Element is preserved: in some software, they will use layer name as id so it will work, but others may not set or set it with other values
-2. `id` is presented in `<column>`: different from text, id hasn't to be wrapped with `{}`
-3. `<column>` does match column name: check if there are spaces before or after the column name, `name,^address` will be considered as `name` and `^address` (^ are space chars)
+In cases that VariaNFT couldn't render properly, check the following things:
+1. `id` of Image Element is preserved: in some software, they will use layer name as id to function, but others may not set or would set it with other values
+2. `id` is presented in `<column>`: in contrast to text, id need not be wrapped with `{}`
+3. `<column>` not matching name of column: check if there are spaces before or after the column name, `name,^address` will be considered as `name` and `^address` (^ are space chars)
