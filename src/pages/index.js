@@ -17,7 +17,7 @@ function HomepageHeader() {
           <Link
             className="button button--secondary button--lg"
             to="/docs/intro">
-            Docusaurus Tutorial - 5min ⏱️
+            VariaNFT Tutorial - 5min ⏱️
           </Link>
         </div>
       </div>
@@ -30,7 +30,7 @@ export default function Home() {
   return (
     <Layout
       title={`Hello from ${siteConfig.title}`}
-      description="Description will go into a meta tag in <head />">
+      description="With VariaNFT, you can create a series of NFTs with only SVG and CSV files needed. It's designed for people who need to make a lot of NFTs while slight differences are needed when creating each of them. Some applications are member cards, personal gifts and tickets, with many more to be discovered.>">
       <HomepageHeader />
       <main>
         <HomepageFeatures />

@@ -4,12 +4,11 @@ import styles from './HomepageFeatures.module.css';
 
 const FeatureList = [
   {
-    title: 'Stop Repeat',
+    title: 'Stop Repeating',
     Svg: require('../../static/img/undraw_Chilling.svg').default,
     description: (
       <>
-        VariaNFT lets you mint different NFTs to your targets without editing
-        and uploading bunch of files.
+        VariaNFT enables minting of different NFTs to your targets without editing and uploading bunch of files.
       </>
     ),
   },
@@ -18,8 +17,7 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_Portfolio_update.svg').default,
     description: (
       <>
-        VariaNFT accepts SVG and CSV which can be retrieved from many design
-        software and data source.
+        VariaNFT supports SVGs and CSVs, which could be obtained with most design software and data sources.
       </>
     ),
   },
@@ -28,10 +26,10 @@ const FeatureList = [
     Svg: require('../../static/img/undraw_programme.svg').default,
     description: (
       <>
-        VariaNFT used{' '}
+        VariaNFT uses{' '}
         <a href="//rarible.com/" target="_blank" referrerPolicy="no-referrer">Rarible</a>{' '}
         and <a href="//nft.storage/" target="_blank" referrerPolicy="no-referrer">NFT.storage</a>.{' '}
-        The NFTs on chain are secure and the data are delievered via IPFS.
+        NFTs on the chains are secure while data is delivered via IPFS.
       </>
     ),
   },
